@@ -1,4 +1,5 @@
-let tl = gsap.timeline();
+function loaderAnimation() {
+    let tl = gsap.timeline();
 tl.from(".line h1",{
     y:150,
     duration:0.6,
@@ -51,5 +52,20 @@ tl.to(".loader",{
     display:"none",
 })
 
+  
+}
 
+loaderAnimation();
 
+function crsrAnimation(params) {
+    document.addEventListener("mousemove", (val) => {
+        gsap.to("#crsr",{
+         left:val.x,
+         top:val.y,
+        })
+     
+    })
+    Shery.makeMagnet("#page1 #nav ul li");
+}
+
+crsrAnimation();
