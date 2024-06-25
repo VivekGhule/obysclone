@@ -6,7 +6,7 @@ tl.from(".line h1",{
     stagger:0.25,
     delay:0.5,
 
-});
+})
 
 tl.to(".line-timer",{
     opacity:1,
@@ -52,7 +52,11 @@ tl.to(".loader",{
     display:"none",
 })
 
-  
+tl.from("#hero1 h1, #hero2 h1, #hero3 h2, #hero4 h1",{
+    y:140,
+    stagger:0.2
+})
+
 }
 
 loaderAnimation();
