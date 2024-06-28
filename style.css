@@ -1,297 +1,350 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Plain Light';
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plain Light";
+  color: white;
 }
-html , body{
-    width: 100%;
-    height: 100%;
-}
-
-
-.loader{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    background-color: #030303;
-    padding: 20vh 10vw;
-    z-index: 999;
-    
-}
-.line{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    overflow: hidden;
-    gap:2vw;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-.line-timer{
-    display: flex;
-    gap:0.8vw;
-    opacity: 0;
+.loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: #030303;
+  padding: 20vh 10vw;
+  z-index: 999;
 }
-.line-timer h5, .line-timer h6{
-    font-family: 'Silk Serif';
-    font-weight: 100;
-    font-size: 2.5vw;
-    
-}
-.line-timer h5{
-    text-align: right;
-    width: 4.1vw;
-}
-
-
-.line h1{
-    text-transform: uppercase;
-    font-size: 6.5vw;
-    font-weight: 900;
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  gap: 2vw;
 }
 
-.line h2{
-    font-size: 5vw;
-    text-transform: uppercase;
-    font-weight: 900;
-    opacity: 0;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
+.line-timer {
+  display: flex;
+  gap: 0.8vw;
+  opacity: 0;
+}
+.line-timer h5,
+.line-timer h6 {
+  font-family: "Silk Serif";
+  font-weight: 100;
+  font-size: 2.5vw;
+}
+.line-timer h5 {
+  text-align: right;
+  width: 4.1vw;
+}
+
+.line h1 {
+  text-transform: uppercase;
+  font-size: 6.5vw;
+  font-weight: 900;
+}
+
+.line h2 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  opacity: 0;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
 }
 @keyframes anime {
-    0%{
-        font-family: "plain light";
-        -webkit-text-stroke: 1px #fff;
-        color: #fff;
-        font-weight: 500;
-        opacity: 1;
-    }
-    48%{
-        font-family: "plain light";
-        -webkit-text-stroke: 1px #fff;
-        color: #fff;
-        font-weight: 500;
-        opacity: 0;
-    }
-    50%{
-        font-family: 'silk serif';
-        -webkit-text-stroke: 1px #fff;
-        font-weight: 500;
-        color: transparent;
-        opacity: 1;
-    }
-    100%{
-        font-family: 'silk serif';
-        -webkit-text-stroke: 1px #fff;
-        font-weight: 500;
-        color: transparent;
-        opacity: 0;
-    }
-}
-                 /** ------------------------------- Main STARTS Here ---------------------------------**/
-                 
-.main{
-    position: relative;
-    background-color: #151515;
-}
-
-#crsr{
-    position: fixed;
-    width: 2.3vw;
-    height: 2.3vw;
-    border-radius: 50%;
-    border:1px solid #ffffffb7;
-    z-index: 1000;
-    mix-blend-mode: difference;
-    transform: translate(-50%,-50%);
-}
-                 /** ------------------------------- #PAGE1 STARTS Here ---------------------------------**/
-#page1{
-    width: 100%;
-    height: 100vh;
-    background-color:#151515;
-}
-#page1 #nav{
-    width: 100%;
-    height: 5vw;
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 9vh 8vw;
-}
-#page1 ul{
-    display: flex;
-    align-items: center;
-    gap: 3vw;
-    
-    
-}
-#logo{
-    font-size: 1.9vw;
-}
-#page1 ul li{
-    font-family: "Plain Light";
-    font-size: 1vw;
+  0% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
     font-weight: 500;
-    text-decoration: none;
-    list-style: none;
-    text-transform: capitalize;
-    
+    opacity: 1;
+  }
+  48% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+  50% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 1;
+  }
+  100% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 0;
+  }
+}
+/** ------------------------------- Main STARTS Here ---------------------------------**/
+
+.main {
+  position: relative;
+  background-color: #151515;
 }
 
-.hero{
-    width: 73%;
-    margin-left: 27%;
-    margin-top:7vw;
+#crsr {
+  position: fixed;
+  width: 2.3vw;
+  height: 2.3vw;
+  border-radius: 50%;
+  border: 1px solid #ffffffb7;
+  z-index: 1000;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
+/** ------------------------------- #PAGE1 STARTS Here ---------------------------------**/
+#page1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #151515;
+}
+#page1 #nav {
+  width: 100%;
+  height: 5vw;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9vh 8vw;
+}
+#page1 ul {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+#logo {
+  font-size: 1.9vw;
+}
+#page1 ul li {
+  font-family: "Plain Light";
+  font-size: 1vw;
+  font-weight: 500;
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.hero {
+  width: 73%;
+  margin-left: 27%;
+  margin-top: 7vw;
 }
 
 .hero-line {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-.hero-line h1,.hero-line h2,.hero-line h3{
-    font-weight: 900;
-    font-size: 7.2vw;
-    text-transform: uppercase;
-    line-height: 7.2vw;
+.hero-line h1,
+.hero-line h2,
+.hero-line h3 {
+  font-weight: 900;
+  font-size: 7.2vw;
+  text-transform: uppercase;
+  line-height: 7.2vw;
 }
-#hero3 h2{
-    padding-bottom:0.4vw ;
-    border-bottom: 0.6vw solid #fff;
-    z-index: 1023;
+#hero3 h2 {
+  padding-bottom: 0.4vw;
+  border-bottom: 0.6vw solid #fff;
+  z-index: 1023;
 }
 #hero3 h2:hover {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-weight: 500;
+  border: none;
+}
+/** ------------------------------- #PAGE2 STARTS Here ---------------------------------**/
+
+#page2 {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-color: #151515;
+}
+#page2 .video-container {
+  width: 60%;
+  height: 30vw;
+  position: relative;
+  top: 20%;
+  left: 40%;
+  background: url(./matrials/images/thumbnailo\ for\ ideo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#page2 .video-container video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+}
+
+#page2 .video-container .play-con {
+  width: 7.5vw;
+  height: 7.5vw;
+  background-color: #ffa63d;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  right: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+}
+
+/** ------------------------------- #PAGE2 END   Here ---------------------------------**/
+/** ------------------------------- #page3 STARTS Here ---------------------------------**/
+#page3 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: red;
+}
+/** ------------------------------- #page3  End   Here ---------------------------------**/
+/** ------------------------------- #page4 STARTS Here ---------------------------------**/
+#page4 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 5vh;
+}
+#page4 #about-obys {
+  width: 72%;
+  position: relative;
+  margin-left: 28%;
+}
+#page4 #about-obys h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+}
+#page4 #about-obys .underline {
+  height: 0.2vw;
+  width: 100%;
+  background-color: #fff;
+  margin: 5vw 0;
+}
+#page4 #about-obys > p {
+  font-size: 2.2vw;
+  width: 49%;
+  font-weight: 500;
+  margin-bottom: 3vw;
+}
+#page4 #about-obys #obys-gallery {
+  display: flex;
+}
+#page4 #about-obys #obys-gallery img {
+  width: 48%;
+}
+#page4 #about-obys #obys-gallery p {
+  width: 20vw;
+  font-size: 1vw;
+  line-height: 1.5vw;
+  margin-left: 2vw;
+  word-spacing: 0.2vw;
+  font-weight: 500;
+}
+
+#page4 #about-obys #about-bluediv {
+  position: relative;
+  width: 48%;
+  background-color: #3f7df4;
+  padding: 4vw 3vw;
+  margin-top: -21%;
+  margin-left: 34%;
+}
+#page4 #about-obys #about-bluediv .bluediv-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2vw 0;
+  border-bottom: 1px solid #fff;
+}
+#page4 #about-obys #about-bluediv .bluediv-row h3 {
+  font-size: 1.8vw;
+  font-weight: 500;
+}
+#page4 #about-obys #about-bluediv .bluediv-row p {
+  width: 10vw;
+}
+
+/** ------------------------------- #page4 End   Here ---------------------------------**/
+/** ------------------------------- #page5 START   Here ---------------------------------**/
+#page5{
+    min-height: 100vh;
+    width: -100%;
+    position: relative;
+}
+
+.elem , .elem2{
+    white-space: nowrap;
+    overflow-x: hidden ;
+    margin-bottom: -2vw;
+
+}
+.elem h1{
+    font-weight: 500;
     -webkit-text-stroke: 1px #fff;
     color: transparent;
+    font-size: 7vw;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 1rem;
+    animation-name: animescroll;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+.elem2 h1{
     font-weight: 500;
-    border: none;
-}
-
-
-#page2{
-    width: 100%;
-    height: 90vh;
-    position: relative;
-    background-color:#151515;
-}
-#page2 .video-container{
-    width: 60%;
-    height: 30vw;
-    position: relative;
-    top: 20%;
-    left:40%;
-    background: url(./matrials/images/thumbnailo\ for\ ideo.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#page2 .video-container video{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity: 0;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-size: 7vw;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 1rem;
+    transform: translateX(calc(-100% - 20px));
+    animation-name: animescroll;
+    animation-duration:18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
     
 }
 
-#page2 .video-container .play-con{
-    width: 7.5vw;
-    height: 7.5vw;
-    background-color: #ffa63d;
-    border-radius: 50%;
-    position: absolute;
-    top: -10%;
-    right:20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3vw;
+.elem span , .elem2 span{
+    font-style: italic;
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
 }
 
-                 /** ------------------------------- #page3 STARTS Here ---------------------------------**/
-#page3{
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    background-color: red;
-}
-                 /** ------------------------------- #page3  End   Here ---------------------------------**/
-                 /** ------------------------------- #page4 STARTS Here ---------------------------------**/
-#page4{
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    padding-top: 5vh;
-}
-#page4 #about-obys{
-    width: 72%;
-    position: relative;
-    margin-left: 28%;
-}
-#page4 #about-obys h1{
-   font-size: 7vw;
-   text-transform: uppercase;
-}
-#page4 #about-obys .underline{
-   height: 0.2vw;
-   width: 100%;
-   background-color: #fff;
-   margin: 5vw 0;
-}
-#page4 #about-obys>p{
-   font-size: 2.2vw;
-   width: 49%;
-   font-weight: 500;
-   margin-bottom: 3vw;
-}
-#page4 #about-obys #obys-gallery{
-    display: flex;
-
-}
-#page4 #about-obys #obys-gallery img{
-    width: 48%;
-}
-#page4 #about-obys #obys-gallery p{
-    width: 20vw;
-    font-size: 1vw;
-    line-height: 1.5vw;
-    margin-left: 2vw;
-    word-spacing: 0.2vw;
-    font-weight: 500;
-}
-
-#page4 #about-obys #about-bluediv{
-    position: relative;
-    width: 48%;
-    background-color: #3f7df4;
-    padding: 4vw 3vw;
-    margin-top: -21%;
-    margin-left: 34%;
-}
-#page4 #about-obys #about-bluediv .bluediv-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 2vw 0;
-    border-bottom: 1px solid #fff;
-}
-#page4 #about-obys #about-bluediv .bluediv-row h3{
-   font-size: 1.8vw;
-   font-weight: 500;
-}
-#page4 #about-obys #about-bluediv .bluediv-row p{
-   width: 10vw;
+@keyframes animescroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 20px));
+    }
+    
 }
 
 
-
-
-
-
-
-                 /** ------------------------------- #page4 End   Here ---------------------------------**/
+/** ------------------------------- #page5 End   Here ---------------------------------**/
 
 /** ------------------------------- Main ENDS Here ---------------------------------**/
